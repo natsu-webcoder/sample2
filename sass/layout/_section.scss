@@ -1,0 +1,11 @@
+@use "../global" as *;
+
+
+.l-section {
+  padding-top: 80px;
+
+  @include mq(lv767) {
+    padding-top: 40px;
+  }
+}
+

@@ -1,0 +1,46 @@
+@use "../../global" as *;
+
+
+.p-top-signin {
+  font-size: 14px;
+
+  &__title {
+    display: block;
+  }
+
+  &__input {
+    margin-top: 11px;
+    padding: 12px 14px;
+    width: 100%;
+    border: 1px solid #DCDFE6;
+    
+    &::placeholder {
+      color: #C1C1C1;
+    }
+  }
+
+  &__item {
+    + .p-top-signin__item {
+      margin-top: 29px;
+    }
+  }
+
+  &__btn {
+    text-align: center;
+    margin-top: 34px;
+
+    button {
+      display: inline-block;
+      padding: 8px 30px;
+      color: #fff;
+      background-color: #1E5099;
+      border-radius: 4px;
+    }
+  }
+
+  &__note {
+    margin-top: 55px;
+    text-align: right;
+    color: #448AFF;
+  }
+}

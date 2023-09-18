@@ -1,0 +1,81 @@
+@use "../../global" as *;
+
+
+.c-btn01 {
+  display: inline-block;
+  width: 180px;
+  padding: 16px 0;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  background-color: $main-color;
+
+  @include mq(lv1280) {
+    width: 240px;
+    padding: 20px 0;
+    font-size: 15px;
+  }
+
+  &-color-light {
+    background-color: #FFB800;
+  }
+
+  &:not(:first-child) {
+    margin-left: 12px;
+
+    @include mq(lv767) {
+      margin-left: 0;
+      display: block;
+      margin-top: 30px;
+    }
+  }
+}
+
+.c-btn02 {
+  position: relative;
+  display: inline-block;
+  width: 330px;
+  padding: 29px 0;
+  border-radius: 42px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: $main-color;
+
+  @include mq(lv767) {
+    width: 250px;
+    padding: 16px 0;
+    font-size: 14px;
+  }
+
+  @include mq(lv375) {
+    width: 200px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    right: 42px;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/btn-more-icon.png);
+
+    @include mq(lv767) {
+      right: 20px;
+    }
+  }
+
+  &--transparent {
+    background-color: transparent;
+    border: 4px solid #fff;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.c-btn02[disabled] {
+  background-color: #ddd;
+}

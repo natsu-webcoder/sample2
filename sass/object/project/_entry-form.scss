@@ -1,0 +1,252 @@
+@use "../../global" as *;
+
+
+.p-entry-form {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 98px 0 126px 0;
+  background-color: #fff;
+  border-radius: 15px;
+
+  @include mq(lv767) {
+    padding: 49px 0 63px 0;
+  }
+
+  &__inner {
+    padding: 0 100px;
+
+    @include mq(lv1280) {
+      padding: 0 50px;
+    }
+
+    @include mq(lv767) {
+      padding: 0 25px;
+    }
+
+    @include mq(lv375) {
+      padding: 0 20px;
+    }
+  }
+
+  &__heading {
+    font-size: 36px;
+
+    @include mq(lv767) {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    span {
+      color: $main-color;
+
+      @include mq(lv767) {
+        display: block;
+      }
+    }
+  }
+
+  &__lead {
+    font-size: 14px;
+    line-height: 2.7;
+    margin-top: 48px;
+
+    @include mq(lv767) {
+      line-height: 2;
+    }
+  }
+
+  &__body {
+    margin-top: 60px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    width: 718px;
+    max-width: 100%;
+
+    @include mq(lv767) {
+      flex-direction: column;
+      align-items: normal;
+    }
+
+    + .p-entry-form__item {
+      margin-top: 60px;
+
+      @include mq(lv767) {
+        margin-top: 40px;
+      }
+    }
+
+    &:nth-child(n+4) {
+      margin-top: 66px;
+    }
+
+    &--top {
+      align-items: flex-start;
+    }
+  }
+
+  &__title {
+    flex: 0 0 35%;
+    font-size: 14px;
+
+    @include mq(lv767) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__require {
+    display: inline-block;
+    line-height: 1;
+    color: #fff;
+    padding: 7px 9px 6px;
+    margin-right: 15px;
+    background-color: $main-color;
+
+    &--reverse {
+      color: #909090;
+      background-color: #DDD;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: 40px;
+    padding: 12px;
+    border: 1px solid #DCDFE6;
+    border-radius: 4px;
+
+    &--short {
+      width: 153px;
+    }
+
+    &::placeholder {
+      color: #C1C1C1;
+    }
+  }
+
+  &__radio-wrapper {
+    @include mq(lv767) {
+      margin-top: 10px;
+    }
+  }
+
+  &__radio {
+    display: flex;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    & label {
+      position: relative;
+      padding-left: 44px;
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background-color: #F3F6FA;
+      }
+    }
+
+    & input[type="radio"] {
+
+      &:checked+label::before {
+        border: 7px solid #F3F6FA;
+        background-color: $main-color;
+      }
+    }
+  }
+
+  &__textarea-wrapper {
+    flex: 1;
+
+    @include mq(lv767) {
+      width: 100%;
+    }
+  }
+
+  &__textarea-note {
+    font-size: 13px;
+    margin-bottom: 25px;
+    margin-top: 4.5px;
+    max-width: 466px;
+  }
+
+  &__textarea {
+    width: 100%;
+    height: 200px;
+    padding: 8px;
+    border: 1px solid #DCDFE6;
+    border-radius: 4px;
+    resize: none;
+  }
+
+  &__consent {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__consent-label {
+    font-size: 14px;
+  }
+
+  &__checkbox-text {
+    cursor: pointer;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border: 1px solid #E0E5EB;
+      border-radius: 3px;
+      margin-right: 14px;
+      flex-shrink: 0;
+      background-color: #F9FBFD;
+
+      @include mq(lv767) {
+        margin-right: 7px;
+      }
+    }
+  }
+
+  &__checkbox:checked + .p-entry-form__checkbox-text:before {
+    background-color: $main-color;
+    border: none;
+  }
+
+  &__checkbox:checked + .p-entry-form__checkbox-text:after {
+    content: "";
+    position: absolute;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    left: 0.4em;
+    top: 0.4em;
+    width: 0.45em;
+    height: 0.7em;
+    transform: translateY(-2px) rotate(45deg);
+  }
+
+  &__btn {
+    margin-top: 98px;
+    text-align: center;
+    
+    @include mq(lv767) {
+      margin-top: 70px;
+    }
+  }
+}

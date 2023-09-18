@@ -1,0 +1,27 @@
+@use "../global" as *;
+
+
+.l-footer {
+  padding: 50px 0;
+
+  @include mq(lv767) {
+    padding: 35px 0;
+  }
+
+  &__inner {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mq(lv767) {
+      flex-direction: column;
+      row-gap: 16px;
+    }
+  }
+
+  &__copyright {
+    font-size: 10px;
+    text-align: center;
+  }
+}

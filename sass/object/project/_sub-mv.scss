@@ -1,0 +1,83 @@
+@use "../../global" as *;
+
+
+.p-sub-mv {
+  position: relative;
+  padding: 100px 0 82px 0;
+  text-align: center;
+
+  @include mq(lv767) {
+    padding: 100px 0 44px 0;
+  }
+
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    background-color: #E9DBB5;
+    width: 100%;
+    height: 612px;
+    bottom: 0;
+
+    @include mq(lv767) {
+      height: 70%;
+    }
+  }
+
+  &__inner {
+    padding: 0 100px 0 100px;
+
+    @include mq(lv767) {
+      padding: 0 20px 0 20px;
+    }
+  }
+
+  &__header {
+    position: relative;
+    height: 434px;
+
+    @include mq(lv767) {
+      height: 300px;
+    }
+  }
+
+  &__img-wrapper {
+    height: 100%;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__img-mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__heading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    @include mq(lv1280) {
+      width: 400px;
+      max-width: 100%;
+    }
+  }
+
+  &__text {
+    margin-top: 82px;
+    line-height: 2;
+    color: #3B320F;
+
+    @include mq(lv767) {
+      margin-top: 44px;
+    }
+  }
+}

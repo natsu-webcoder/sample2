@@ -1,0 +1,39 @@
+@use "../../global" as *;
+
+
+.c-heading {
+  text-align: center;
+
+  &__main {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 8px;
+
+    @include mq(lv767) {
+      font-size: 24px;
+    }
+  }
+}
+
+.c-headinglv2 {
+  text-align: center;
+
+  &__sub {
+    color: #FFB800;
+    font-size: 14px;
+  }
+
+  &__main {
+    font-size: 42px;
+    color: #fff;
+    margin-top: 6px;
+
+    @include mq(lv767) {
+      font-size: 28px;
+    }
+
+    @include mq(lv375) {
+      font-size: 24px;
+    }
+  }
+}

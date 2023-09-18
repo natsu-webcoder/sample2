@@ -1,0 +1,47 @@
+@use "../../global" as *;
+
+
+.p-intro-item {
+  width: 720px;
+
+  @include mq(lv1280) {
+    width: 670px;
+  }
+
+  @include mq(lv767) {
+    width: 100%;
+  }
+
+  &:nth-child(2) {
+    text-align: right;
+  }
+
+  &__heading-main {
+    margin-top: 25px;
+    font-size: 24px;
+    font-weight: bold;
+
+    @include mq(lv767) {
+      margin-top: 15px;
+      font-size: 18px;
+    }
+  }
+
+  &__heading-sub-img {
+    width: 100px;
+
+    @include mq(lv767) {
+      width: 80px;
+    }
+  }
+
+  &__text {
+    margin-top: 25px;
+    line-height: 2.5;
+
+    @include mq(lv767) {
+      margin-top: 16px;
+      line-height: 2;
+    }
+  }
+}

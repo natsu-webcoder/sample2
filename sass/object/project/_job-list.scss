@@ -1,0 +1,55 @@
+@use "../../global" as *;
+
+
+.p-job-list {
+  position: relative;
+  padding-bottom: 313px;
+
+  @include mq(lv1280) {
+    padding-bottom: 200px;
+  }
+
+  @include mq(lv767) {
+    padding-bottom: 150px;
+  }
+
+  &__lead {
+    text-align: center;
+    margin-top: 43px;
+
+    @include mq(lv767) {
+      margin-top: 24px;
+    }
+  }
+
+  &__body {
+    margin-top: 127px;
+
+    @include mq(lv767) {
+      margin-top: 70px;
+    }
+  }
+
+  &__list {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 98px;
+    row-gap: 133px;
+
+    @include mq(lv767) {
+      row-gap: 90px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__img {
+    width: 100vw;
+    height: calc(100% + 274px);
+    background-color:#F9F9F9;
+    position: absolute;
+    z-index: -1;
+    top: -58px;
+    left: -58px;
+  }
+}

@@ -1,0 +1,44 @@
+@use "../../global" as *;
+
+
+.p-cta {
+  text-align: center;
+  color: #fff;
+  background-image: url(../img/cta-bg-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__inner {
+    padding: 84px 30px 66px 30px;
+    background: linear-gradient(to bottom, rgba(255, 138, 0, 0.9), rgba(255, 184, 0, 0.9));
+  
+    @include mq(lv767) {
+      padding: 40px 20px 40px 20px;
+    }
+  }
+
+  &__title {
+    margin-top: 20px;
+    font-size: 42px;
+    font-weight: bold;
+
+    @include mq(lv767) {
+      font-size: 24px;
+    }
+  }
+
+  &__text {
+    margin-top: 20px;
+  }
+
+  &__btn {
+    margin-top: 48px;
+
+    .c-btn02 {
+      @include mq(lv375) {
+        width: 230px;
+      }
+    }
+  }
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='採用情報 | 株式会社Igatta Group(イガッタグループ)'>
+  <meta property='og:url' content='https://natsucoder.com/test2'>
+  <meta property='og:description'
+    content='Webマーケティングを中心にクライアントの売上向上に特化した精鋭集団、株式会社Igatta Groupの採用サイトです。'>
+  <meta property="og:image" content="https://natsucoder.com/test2/img/ogp.png">
+  <meta name="description" content="Webマーケティングを中心にクライアントの売上向上に特化した精鋭集団、株式会社Igatta Groupの採用サイトです。" />
+  <meta name="robots" content="noindex">
+  <title>採用情報 | 株式会社Igatta Group(イガッタグループ)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>  
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/png" href="img/icon-192x192.png">
+  <link rel="apple-touch-icon" type="image/png" href="img/apple-touch-icon-180x180.png">
+  <link rel="icon" href="img/favicon.ico">
+</head>
+
+<body class="entry">
+  <div class="wrapper">
+    <header class="l-header">
+      <div class="l-header__inner">
+        <h1 class="l-header__logo c-logo">
+          <a class="c-logo__link" href="index.html">
+            <div class="c-logo__img-wrapper">
+              <img class="c-logo__img" src="img/logo.svg">
+            </div>
+            <div class="c-logo__title-wrapper">
+              <div class="c-logo__title c-logo__title-en">Igatta Group</div>
+              <div class="c-logo__title c-logo__title-jp">新卒採用サイト</div>
+            </div>
+          </a>
+        </h1>
+        <div class="l-header__nav">
+          <nav class="p-global-nav">
+            <ul class="p-global-nav__list">
+              <li class="p-global-nav__item">
+                <a class="p-global-nav__link" href="index.html#intro">Mission&Vision</a>
+              </li>
+              <li class="p-global-nav__item">
+                <a class="p-global-nav__link" href="index.html#message">Message</a>
+              </li>
+              <li class="p-global-nav__item">
+                <a class="p-global-nav__link" href="index.html#job-list">Job List</a>
+              </li>
+            </ul>
+            <div class="l-header__btn">
+              <a class="c-btn01 c-btn01-color-light" data-micromodal-trigger="modal-1">MY PAGEはこちら</a>
+              <a href="entry.html" class="c-btn01">エントリーはこちら</a>
+            </div> 
+          </nav>
+        </div>    
+        <button type="button" class="c-btn-menu js-btn-menu">
+          <span class="c-btn-menu__line"></span>
+        </button>
+      </div>
+    </header>
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+          <header class="modal__header">
+            <h2 class="modal__title" id="modal-1-title">MY PAGE-ログイン</h2>
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+          </header>
+          <main class="modal__content" id="modal-1-content">
+            <form class="p-top-signin">
+              <div class="p-top-signin__inner">
+                <div class="p-top-signin__body">
+                  <div class="p-top-signin__item">
+                    <label for="signin-email" class="p-top-signin__title">メールアドレス</label>
+                    <input class="p-top-signin__input" type="text" id="signin-email" name="signin-email" placeholder="例）example@example.com" required>
+                  </div>
+                  <div class="p-top-signin__item">
+                    <label for="signin-password" class="p-top-signin__title">パスワード</label>
+                    <input class="p-top-signin__input" type="signin-password" id="signin-password" name="password" required>
+                  </div>
+                  <div class="p-top-signin__btn">
+                    <button type="submit">サインイン</button>
+                  </div>
+                  <div class="p-top-signin__note">
+                    <a href="#" class="p-top-signin__note-link">新規登録はこちら</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </main>
+        </div>
+      </div>
+    </div>
+    <main class="l-main--entry-form">
+      <form class="p-entry-form">
+        <div class="p-entry-form__inner">
+          <div class="p-entry-form__heading">新卒採用<span>エントリーフォーム</span></div>
+          <div class="p-entry-form__lead">弊社にご興味をお持ちいただき、ありがとうございます。<br>下記をご入力の上、送信ください。</div>
+          <div class="p-entry-form__body">
+            <div class="p-entry-form__item">
+              <label for="name" class="p-entry-form__title"><span class="p-entry-form__require">必須</span>お名前</label>
+              <input class="p-entry-form__input" type="text" id="name" name="name" placeholder="例）長谷川　太郎" required>
+            </div>
+            <div class="p-entry-form__item">
+              <label for="age" class="p-entry-form__title"><span class="p-entry-form__require">必須</span>ご年齢</label>
+              <input class="p-entry-form__input p-entry-form__input--short" type="text" id="age" name="age" placeholder="例）32" required>
+            </div>
+            <div class="p-entry-form__item">
+              <label for="email" class="p-entry-form__title"><span class="p-entry-form__require">必須</span>メールアドレス</label>
+              <input class="p-entry-form__input" type="text" id="email" name="email" placeholder="例）example@example.com" required>
+            </div>
+            <div class="p-entry-form__item p-entry-form__item--top">
+              <div class="p-entry-form__title"><span class="p-entry-form__require">必須</span>応募職種</div>
+              <div class="p-entry-form__radio-wrapper">
+                <span class="p-entry-form__radio">
+                  <input class="u-visually-hidden" type="radio" id="type01" name="type" value="Webディレクター">
+                  <label for="type01">Webディレクター</label>
+                </span>
+                <span class="p-entry-form__radio">
+                  <input class="u-visually-hidden" type="radio" id="type02" name="type" value="Webエンジニア">
+                  <label for="type02">Webエンジニア</label>
+                </span>
+                <span class="p-entry-form__radio">
+                  <input class="u-visually-hidden" type="radio" id="type03" name="type" value="Webデザイナー">
+                  <label for="type03">Webデザイナー</label>
+                </span>
+                <span class="p-entry-form__radio">
+                  <input class="u-visually-hidden" type="radio" id="type04" name="type" value="Webマーケター">
+                  <label for="type04">Webマーケター</label>
+                </span>
+              </div>
+            </div>
+            <div class="p-entry-form__item">
+              <label for="income" class="p-entry-form__title"><span class="p-entry-form__require">必須</span>希望年収</label>
+              <input class="p-entry-form__input p-entry-form__input--short" type="text" id="income" name="income" required>
+            </div>
+            <div class="p-entry-form__item p-entry-form__item--top">
+              <label for="achievement" class="p-entry-form__title"><span class="p-entry-form__require p-entry-form__require--reverse">必須</span>実績</label>
+              <div class="p-entry-form__textarea-wrapper">
+                <div class="p-entry-form__textarea-note">これまでの開発実績の分かるGithubのURLや、公開しているWebサイトがあれば、そのURLの添付をお願いします。</div>
+                <textarea class="p-entry-form__textarea" id="achievement" name="achievement"></textarea>
+              </div> 
+            </div>
+            <div class="p-entry-form__item p-entry-form__item--top">
+              <label for="background" class="p-entry-form__title"><span class="p-entry-form__require">必須</span>学歴</label>
+              <div class="p-entry-form__textarea-wrapper">
+                <div class="p-entry-form__textarea-note">高校以降の学歴をご記載下さい。</div>
+                <textarea class="p-entry-form__textarea" id="background" name="background"></textarea>
+              </div>
+            </div>
+            <div class="p-entry-form__item p-entry-form__item--top">
+              <label for="pr" class="p-entry-form__title"><span class="p-entry-form__require">必須</span>自己PR</label>
+              <div class="p-entry-form__textarea-wrapper">
+                <div class="p-entry-form__textarea-note">簡単で結構ですので、あなたのPRポイントをご記載下さい。</div>
+                <textarea class="p-entry-form__textarea" id="pr" name="pr"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="p-entry-form__consent">
+            <label class="p-entry-form__consent-label">
+                <input type="checkbox" name="checkbox" value="" class="p-entry-form__checkbox u-visually-hidden" required>
+                <span class="p-entry-form__checkbox-text">個人情報保護方針に同意する</span>
+            </label>
+          </div>
+          <div class="p-entry-form__btn">
+            <button type="submit" class="c-btn02" disabled>エントリーする</button>
+          </div>
+        </div>
+      </form>
+    </main>
+    <div class="l-footer">
+      <div class="l-footer__inner">
+        <h1 class="l-footer__logo c-logo">
+          <a class="c-logo__link" href="index.html">
+            <div class="c-logo__img-wrapper">
+              <img class="c-logo__img" src="img/logo.svg">
+            </div>
+            <div class="c-logo__title-wrapper">
+              <div class="c-logo__title c-logo__title-en">Igatta Group</div>
+              <div class="c-logo__title c-logo__title-jp">新卒採用サイト</div>
+            </div>
+          </a>
+        </h1>
+        <div class="l-footer__copyright">Copyright&copy; IGATTA GROUP co.,Ltd. All Rights Reserved.</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

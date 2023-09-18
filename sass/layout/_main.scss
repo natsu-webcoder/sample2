@@ -1,0 +1,18 @@
+@use "../global" as *;
+
+
+.l-main--entry-form {
+  margin-top: 100px;
+  padding: 72px 150px 75px;
+  background-color: #F6F3EC;
+
+  @include mq(lv1280) {
+    padding: 72px 50px 75px;
+  }
+
+  @include mq(lv767) {
+    margin-top: 80px;
+    padding: 72px 20px 75px;
+  }
+}
+

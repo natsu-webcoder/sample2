@@ -1,0 +1,42 @@
+@use "../../global" as *;
+
+
+.c-logo {
+  &__link {
+    display: flex;
+    column-gap: 14px;
+  }
+
+  &__img-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    @include mq(lv767) {
+      width: 40px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    color: $main-color;
+
+    &-en {
+      font-size: 20px;
+
+      @include mq(lv767) {
+        font-size: 18px;
+      }
+    }
+
+    &-jp {
+      font-size: 12px;
+      margin-top: 5px;
+
+      @include mq(lv767) {
+        margin-top: 2px;
+      }
+    }
+  }
+}

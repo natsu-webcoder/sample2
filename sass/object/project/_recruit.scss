@@ -1,0 +1,38 @@
+@use "../../global" as *;
+
+
+.p-recruit {
+  padding: 75px 0 188px 0;
+
+  @include mq(lv767) {
+    padding: 40px 0 80px 0;
+  }
+
+  &__heading {
+    font-size: 32px;
+    line-height: 2;
+    text-align: center;
+
+    @include mq(lv767) {
+      font-size: 24px;
+    }
+  }
+
+  &__inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    @include mq(lv767) {
+      padding: 0 20px;
+    }
+  }
+
+  &__table {
+    margin-top: 75px;
+
+    @include mq(lv767) {
+      margin-top: 40px;
+    }
+  }
+}

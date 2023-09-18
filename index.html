@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='採用情報 | 株式会社Igatta Group(イガッタグループ)'>
+  <meta property='og:url' content='https://natsucoder.com/test2'>
+  <meta property='og:description'
+    content='Webマーケティングを中心にクライアントの売上向上に特化した精鋭集団、株式会社Igatta Groupの採用サイトです。'>
+  <meta property="og:image" content="https://natsucoder.com/test2/img/ogp.png">
+  <meta name="description" content="Webマーケティングを中心にクライアントの売上向上に特化した精鋭集団、株式会社Igatta Groupの採用サイトです。" />
+  <meta name="robots" content="noindex">
+  <title>採用情報 | 株式会社Igatta Group(イガッタグループ)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>  
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/png" href="img/icon-192x192.png">
+  <link rel="apple-touch-icon" type="image/png" href="img/apple-touch-icon-180x180.png">
+  <link rel="icon" href="img/favicon.ico">
+</head>
+
+<body class="home">
+  <div class="wrapper">
+    <div id="loading">
+      <div class="kvArea" id="loading_logo">
+        <div class="img_box">
+          <img src="img/logo.svg" class="fadeUp">
+        </div>
+        <div id="loading_text"></div>
+      </div>
+    </div>
+    <header class="l-header">
+      <div class="l-header__inner">
+        <h1 class="l-header__logo c-logo">
+          <a class="c-logo__link" href="index.html">
+            <div class="c-logo__img-wrapper">
+              <img class="c-logo__img" src="img/logo.svg">
+            </div>
+            <div class="c-logo__title-wrapper">
+              <div class="c-logo__title c-logo__title-en">Igatta Group</div>
+              <div class="c-logo__title c-logo__title-jp">新卒採用サイト</div>
+            </div>
+          </a>
+        </h1>
+        <div class="l-header__nav">
+          <nav class="p-global-nav">
+            <ul class="p-global-nav__list">
+              <li class="p-global-nav__item">
+                <a class="p-global-nav__link" href="#intro">Mission&Vision</a>
+              </li>
+              <li class="p-global-nav__item">
+                <a class="p-global-nav__link" href="#message">Message</a>
+              </li>
+              <li class="p-global-nav__item">
+                <a class="p-global-nav__link" href="#job-list">Job List</a>
+              </li>
+            </ul>
+            <div class="l-header__btn">
+              <a class="c-btn01 c-btn01-color-light" data-micromodal-trigger="modal-1">MY PAGEはこちら</a>
+              <a href="entry.html" class="c-btn01">エントリーはこちら</a>
+            </div> 
+          </nav>
+        </div>    
+        <button type="button" class="c-btn-menu js-btn-menu">
+          <span class="c-btn-menu__line"></span>
+        </button>
+      </div>
+    </header>
+    <div class="p-mv">
+      <div class="swiper p-mv__slider">
+        <div class="swiper-wrapper">
+          <div class="p-mv__img-wrapper swiper-slide zoom">
+            <img class="p-mv__img p-mv__img--01" src="img/mv01.jpg">
+          </div>   
+          <div class="p-mv__img-wrapper swiper-slide zoom">
+            <img class="p-mv__img p-mv__img--02" src="img/mv02.jpg">
+          </div>       
+          <div class="p-mv__img-wrapper swiper-slide zoom">
+            <img class="p-mv__img p-mv__img--03" src="img/mv03.jpg">
+          </div> 
+        </div>
+      </div>
+      <div class="p-mv__bg"></div>
+      <div class="p-mv__message">
+        <img class="p-mv__message-img" src="img/mv-message.svg">
+      </div>
+    </div>
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+          <header class="modal__header">
+            <h2 class="modal__title" id="modal-1-title">MY PAGE-ログイン</h2>
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+          </header>
+          <main class="modal__content" id="modal-1-content">
+            <form class="p-top-signin">
+              <div class="p-top-signin__inner">
+                <div class="p-top-signin__body">
+                  <div class="p-top-signin__item">
+                    <label for="signin-email" class="p-top-signin__title">メールアドレス</label>
+                    <input class="p-top-signin__input" type="text" id="signin-email" name="signin-email" placeholder="例）example@example.com" required>
+                  </div>
+                  <div class="p-top-signin__item">
+                    <label for="signin-password" class="p-top-signin__title">パスワード</label>
+                    <input class="p-top-signin__input" type="signin-password" id="signin-password" name="password" required>
+                  </div>
+                  <div class="p-top-signin__btn">
+                    <button type="submit">サインイン</button>
+                  </div>
+                  <div class="p-top-signin__note">
+                    <a href="#" class="p-top-signin__note-link">新規登録はこちら</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </main>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section id="intro" class="p-intro l-section">
+        <div class="l-inner">
+          <div class="p-intro__heading">
+            <h2 class="c-heading">
+              <div class="c-heading__sub">
+                <img class="c-heading__sub-img" src="img/mission&vision.svg" alt="" >
+              </div>
+              <div class="c-heading__main">Igatta Groupの<br class="u-sp-only">ミッション・ビジョン</div>
+            </h2>
+          </div>
+          <div class="p-intro__body">
+            <div class="p-intro__list">
+              <div class="p-intro__item p-intro-item">
+                <div class="p-intro-item__heading">
+                  <div class="p-intro-item__heading-sub">
+                    <img class="p-intro-item__heading-sub-img" src="img/mission.svg">
+                  </div>
+                  <div class="p-intro-item__heading-main">未来のビジネスを創る、<br>クライアントのWebパートナー<br class="u-sp-only">として共に成功を</div>
+                </div>
+                <div class="p-intro-item__text">Igatta GroupはWebのトータルサポートを行う会社であり、クライアントの売上を伸ばすことを専門としています。<br>"Webパートナー"という表現は、Igatta Groupが単なるサービス提供者ではなく、クライアントと共に連携し、協力してビジネスを進化させていく存在であることを表しています。</div>
+              </div>
+              <div class="p-intro__item p-intro-item">
+                <div class="p-intro-item__heading">
+                  <div class="p-intro-item__heading-sub">
+                    <img class="p-intro-item__heading-sub-img" src="img/vision.svg">
+                  </div>
+                  <div class="p-intro-item__heading-main">日本の魅力をWebで輝かせる<br>Igatta Groupが目指す社会を創る</div>
+                </div>
+                <div class="p-intro-item__text">Igatta Groupが目指す社会は、優れたサービスや商品が世に出て皆の役に立つことです。<br>Webを活用することで、これらの優れたサービスや商品をより多くの人々に知ってもらい、<br>売上を伸ばし、事業を成長させることができる社会を目指します。</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-intro__bg-img"></div>
+      </section>
+      <section id="message" class="p-message">
+        <div class="p-message__heading">
+          <h2 class="c-heading">
+            <div class="c-heading__sub">
+              <img class="c-heading__sub-img" src="img/message.svg" alt="" >
+            </div>
+            <div class="c-heading__main">社長メッセージ</div>
+          </h2>
+        </div>
+        <div class="p-message__body">
+          <div class="p-message__bg">
+            <img class="p-message__bg-img" src="img/bg-message.jpg">
+          </div>
+          <div class="l-inner p-message__inner">
+            <div class="p-message__title">技術革新をも乗りこなし、<br class="u-tb-sp-only">未来を切り拓け</div>
+            <div class="p-message__text">Igatta Groupのルーツは、1990年代初頭のインターネット黎明期の頃にさかのぼります。<br>まだWebマーケティングという言葉が一般に知れ渡る前に「この先の時代、インターネットでの集客がメインになるはず！」と当時大手印刷会社に努めていた私はIgatta Groupの創業を決めます。<br>しかし、当初は荒波の連続でした。なにせ「チラシ」と「ポスター」で集客をしていた時代です。「ネットで集客なんてできるの？」という懐疑的な声を沢山いただき、クライアント先に営業をするたびにお断りを頂いておりました。「何か怪しいもの」と捉えられていたのです。<br>しかし、1999年にとある町工場のサイトを弊社が公開した後に、その町工場はBBCなどで世界的に取り上げられることになります。 日本への取材前にWebブラウジングしていたBBC記者が、弊社作のサイトを偶然見つけたのです。サイト内では「クライアントの魅力を伝える」ことを徹底したため、それが伝わったのだと思います。<br>これにより国内でも大きな話題となり、大手企業を中心に受注をいただくことになりました。<br>挑戦で成長してきた会社です。みなさんの熱い応募、お待ちしています。</div>
+          </div>
+          <div class="p-message__profile">
+            <div class="p-message__profile-label">代表取締役社長</div>
+            <div class="p-message__profile-name">
+              <img class="p-message__profile-name-img" src="img/ceo-name.svg">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="job-list" class="p-job-list l-section">
+        <div class="l-inner">
+          <div class="p-job-list__heading">
+            <h2 class="c-heading">
+              <div class="c-heading__sub">
+                <img class="c-heading__sub-img" src="img/job-list.svg" alt="" >
+              </div>
+              <div class="c-heading__main">募集職種一覧</div>
+            </h2>
+          </div>
+          <div class="p-job-list__lead">それぞれの募集職種の詳細は個別ページで解説しています。</div>
+          <div class="p-job-list__body">
+            <div class="p-job-list__list">
+              <div class="p-job-list__img"></div>
+              <a class="p-job-item-wrapper" href="director.html">
+                <div class="p-job-item">
+                  <div class="p-job-item__img-wrapper">
+                    <img class="p-job-item__img" src="img/director.jpg">
+                  </div>
+                  <div class="p-job-item__body">
+                    <div class="p-job-item__label">web director</div>
+                    <div class="p-job-item__body-inner">
+                      <div class="p-job-item__text">Webディレクターはクライアントとの打ち合わせから、プロジェクト全体の進捗管理までを行います。</div>
+                      <div class="p-job-item__btn">
+                        <img class="p-job-item__btn-img" src="img/more-icon.png">
+                      </div>
+                    </div>            
+                  </div>
+                </div>
+              </a>
+              <a class="p-job-item-wrapper" href="engineer.html">
+                <div class="p-job-item">
+                  <div class="p-job-item__img-wrapper">
+                    <img class="p-job-item__img" src="img/engineer.jpg">
+                  </div>
+                  <div class="p-job-item__body">
+                    <div class="p-job-item__label">web engineer</div>
+                    <div class="p-job-item__body-inner">
+                      <div class="p-job-item__text">WebエンジニアはクライアントのWebサイトや自社サイトのフロント・バックエンド両方の開発・改修を行います。</div>
+                      <div class="p-job-item__btn">
+                        <img class="p-job-item__btn-img" src="img/more-icon.png">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a class="p-job-item-wrapper" href="designer.html">
+                <div class="p-job-item">
+                  <div class="p-job-item__img-wrapper">
+                    <img class="p-job-item__img" src="img/designer.jpg">
+                  </div>
+                  <div class="p-job-item__body">
+                    <div class="p-job-item__label">web designer</div>
+                    <div class="p-job-item__body-inner">
+                      <div class="p-job-item__text">WebデザイナーはクライアントのWebサイトや自社サイトのデザイン・コーディングを行います。</div>
+                      <div class="p-job-item__btn">
+                        <img class="p-job-item__btn-img" src="img/more-icon.png">
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+              </a>
+              <a class="p-job-item-wrapper" href="marketer.html">
+                <div class="p-job-item">
+                  <div class="p-job-item__img-wrapper">
+                    <img class="p-job-item__img" src="img/marketer.jpg">
+                  </div>
+                  <div class="p-job-item__body">
+                    <div class="p-job-item__label">web marketer</div>
+                    <div class="p-job-item__body-inner">
+                      <div class="p-job-item__text">WebマーケターはクライアントのWebサイトや自社サイトの広告運用やLPO、EC運用などを行います。</div>
+                      <div class="p-job-item__btn">
+                        <img class="p-job-item__btn-img" src="img/more-icon.png">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="p-cta">
+        <div class="p-cta__inner">
+          <div class="p-cta__logo">
+            <img class="p-cta__logo-img" src="img/cta-logo.svg">
+          </div>
+          <div class="p-cta__title">熱い気持ちを持った方、<br class="u-tb-sp-only">募集しています。</div>
+          <div class="p-cta__text">まずはカジュアルランチから。<br class="u-sp-only">皆様の就活の思い、悩みの相談に乗ります。<br>また弊社のオフィスツアー・社員との<br class="u-sp-only">座談会も行います。<br>価値観が会えば、面接に起こしいただけると<br class="u-sp-only">幸いです</div>
+          <div class="p-cta__btn">
+            <a href="entry.html" class="c-btn02 c-btn02--transparent">エントリーはこちら</a>  
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="l-footer">
+      <div class="l-footer__inner">
+        <h1 class="l-footer__logo c-logo">
+          <a class="c-logo__link" href="index.html">
+            <div class="c-logo__img-wrapper">
+              <img class="c-logo__img" src="img/logo.svg">
+            </div>
+            <div class="c-logo__title-wrapper">
+              <div class="c-logo__title c-logo__title-en">Igatta Group</div>
+              <div class="c-logo__title c-logo__title-jp">新卒採用サイト</div>
+            </div>
+          </a>
+        </h1>
+        <div class="l-footer__copyright">Copyright&copy; IGATTA GROUP co.,Ltd. All Rights Reserved.</div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.0.1/progressbar.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/slide.js"></script>
+  <script src="js/loading.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

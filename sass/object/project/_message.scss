@@ -1,0 +1,105 @@
+@use "../../global" as *;
+
+
+.p-message {
+  padding-top: 29px;
+
+  @include mq(lv767) {
+    padding-top: 10px;
+  }
+
+  &__body {
+    position: relative;
+    margin-top: 70px;
+    padding: 24px 0;
+    
+    @include mq(lv767) {
+      margin-top: 40px;
+      padding: 0;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    @include mq(lv767) {
+      position: relative;
+      height: 300px;
+    }
+  }
+
+  &__bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    @include mq(lv767) {
+      mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 100%);
+    }
+  }
+
+  &__inner {
+    @include mq(lv767) {
+      transform: translateY(-150px);
+      margin-bottom: -150px;
+      // position: absolute;
+      // top: -150px;
+    } 
+  }
+
+  &__title {
+    font-size: 32px;
+
+    @include mq(lv767) {
+      font-size: 24px;
+      margin-top: 40px;
+    }
+  }
+
+  &__text {
+    width: 550px;
+    line-height: 2;
+    margin-top: 30px;
+
+    @include mq(lv1280) {
+      width: 500px;
+    }
+
+    @include mq(lv767) {
+      width: 100%;
+    }
+  }
+
+  &__profile {
+    position: absolute;
+    bottom: 53px;
+    right: 0;
+    padding: 16px 116px 21px 26px;
+    background-color: #fff;
+
+    @include mq(lv1280) {
+      padding: 16px 26px 21px 26px;
+    }
+
+    @include mq(lv767) {
+      width: 208px;
+      height: 124px;
+      top: 100px;
+      transform: translateY(-50%);
+      left: 0;
+    }
+  }
+
+  &__profile-label {
+    font-size: 18px;
+  }
+
+  &__profile-name {
+    margin-top: 20px;
+  }
+}

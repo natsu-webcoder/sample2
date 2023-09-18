@@ -1,0 +1,27 @@
+@use "../../global" as *;
+
+
+.u-pc-only {
+  display: block;
+
+  @include mq(lv767) {
+    display: none;
+  }
+}
+
+
+.u-tb-sp-only {
+  display: none;
+
+  @include mq(lv1280) {
+    display: block;
+  }
+}
+
+.u-sp-only {
+  display: none;
+
+  @include mq(lv767) {
+    display: block;
+  }
+}

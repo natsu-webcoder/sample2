@@ -1,0 +1,70 @@
+@use "../../global" as *;
+
+
+.p-mv {
+  position: relative;
+  height: 818px;
+
+  &__slider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 78%;
+    height: 705px;
+
+    @include mq(lv767) {
+      width: 88%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    &--01 {
+      @include mq(lv767) {
+        object-position: 60%;
+      }
+    }
+
+    &--02 {
+      @include mq(lv767) {
+        object-position: 50%;
+      }
+    }
+
+    &--03 {
+      @include mq(lv767) {
+        object-position: 40%;
+      }
+    }
+
+  }
+
+  &__bg {
+    position: absolute;
+    bottom: 0;
+    width: 88%;
+    height: 575px;
+    background-image: linear-gradient(to bottom, #FF8A00, #FFB800);
+  }
+
+  &__message {
+    position: absolute;
+    z-index: 1;
+    left: 10%;
+    bottom: 137px;
+
+    @include mq(lv767) {
+      left: auto;
+      left: 5%;
+      padding-right: 20px;
+      bottom: 200px;
+    }
+  }
+
+  &__message-img {
+    filter: drop-shadow(3px 3px 3px #333);
+  }
+}
